@@ -19,7 +19,7 @@ const serialPort = new SerialPort({ path: '/dev/tty.usbmodemSP000002153', baudRa
 npm run start 
 ```
 
-## 5. open tool.html in Chrome 
+## 5. Open tool.html in Chrome 
 > [!TIP]
 > Type raw bytes in the text input and press *Send* to send to the serial channel
 
