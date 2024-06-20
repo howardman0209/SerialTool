@@ -1,7 +1,13 @@
 const express = require('express')
 const app = express()
 const { SerialPort } = require('serialport');
-const serialPort = new SerialPort({ path: '/dev/tty.usbmodemSP000002153', baudRate: 115200 });
+const serialPort = new SerialPort({
+    path: '/dev/tty.usbmodemSP000002153', baudRate: 115200,
+    dataBits: 8,
+    parity: 'none',
+    stopBits: 1,
+    flowControl: false
+});
 const WebSocketServer = require('ws').Server;
 const port = 8000
 wss = new WebSocketServer({ port: port })
