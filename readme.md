@@ -27,5 +27,5 @@ npm run start
 
 ## 5. Open tool.html in Chrome 
 > [!TIP]
-> Type raw bytes in the text input and press *Send* to send to the serial channel
-
+> Type raw bytes in the text input and press <button>Send</button> to send to the serial channel
+![SerialHelper](https://i.imgur.com/tQ8Cb9q.png)
