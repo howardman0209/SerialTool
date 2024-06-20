@@ -9,9 +9,15 @@ npm install express serialport ws -save
 ls /dev/tty.*
 ```
 
-## 3. Config the Serial Port path and baud rate in server.js at line 4
+## 3. Config the Serial Port path and baud rate in server.js at line 4 - 10
 ```js
-const serialPort = new SerialPort({ path: '/dev/tty.usbmodemSP000002153', baudRate: 115200 });
+const serialPort = new SerialPort({
+    path: '/dev/tty.usbmodemSP000002153', baudRate: 115200,
+    dataBits: 8,
+    parity: 'none',
+    stopBits: 1,
+    flowControl: false
+});
 ```
 
 ## 4. Start the WebSocket server
