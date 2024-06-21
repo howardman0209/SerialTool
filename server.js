@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const { SerialPort } = require('serialport');
 const serialPort = new SerialPort({
-    path: '/dev/tty.usbmodemSP000002153', baudRate: 115200,
+    path: '/dev/tty.usbmodemSP000002043', baudRate: 115200,
     dataBits: 8,
     parity: 'none',
     stopBits: 1,
