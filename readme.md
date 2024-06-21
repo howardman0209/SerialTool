@@ -25,7 +25,22 @@ const serialPort = new SerialPort({
 npm run start 
 ```
 
-## 5. Open tool.html in Chrome 
+## 5. Go to `Tools` (Directory) and start the WebServer for the application
+```
+cd Tools
+```
+
+```
+http-server
+```
+> [!WARNING]
+> Make sure `http-server` is already installed. If not just install it by following command.
+```
+npm install -g http-server
+```
+
+## 5. Open the application in your browser (eg. Chrome)
+Open chrome and type `http://localhost:8080/` as a URL
 > [!TIP]
 > Type raw bytes in the text input and press <button>Send</button> to send to the serial channel
 ![SerialHelper](https://i.imgur.com/tQ8Cb9q.png)
