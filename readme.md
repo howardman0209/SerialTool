@@ -39,7 +39,7 @@ http-server
 npm install -g http-server
 ```
 
-## 5. Open the application in your browser (eg. Chrome)
+## 6. Open the application in your browser (eg. Chrome)
 Open chrome and type `http://localhost:8080/` as a URL
 > [!TIP]
 > Type raw bytes in the text input and press <button>Send</button> to send to the serial channel
