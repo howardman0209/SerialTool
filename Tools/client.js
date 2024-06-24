@@ -1,6 +1,6 @@
 import "./extension/String.js";
 import "./extension/ArrayBuffer.js";
-import SerialPort from "./serialPort.js";
+import SerialPort from "./serial-port.js";
 
 document.body.innerHTML += `<pre id="output"></pre>`;
 const output = document.getElementById('output');

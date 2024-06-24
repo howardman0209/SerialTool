@@ -14,3 +14,20 @@ String.prototype.hexToByteArray = function hexToByteArray() {
 
     return byteArray;
 }
+
+
+String.prototype.asciiToHex = function () {
+    return this.split('')
+        .map(char => char.charCodeAt(0).toString(16).padStart(2, '0'))
+        .join('');
+};
+
+String.prototype.hexToAscii = function() {
+    const hex = this;
+    let ascii = '';
+    for (let i = 0; i < hex.length; i += 2) {
+        const hexChar = hex.substr(i, 2);
+        ascii += String.fromCharCode(parseInt(hexChar, 16));
+    }
+    return ascii;
+};

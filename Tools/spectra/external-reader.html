@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>External Reader</title>
+</head>
+
+<body>
+    <h1>External Reader</h1>
+    <div>
+        <label for="c0Input">C0</label>
+        <select id="c0Input">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="30">Payment</option>
+            <option value="34">Cancel</option>
+            <option value="31">Load AID</option>
+            <option value="32">Load CAPK</option>
+        </select>
+    </div>
+    <div>
+        <label for="c1Input">C1</label>
+        <textarea id="c1Input" type="text"></textarea>
+    </div>
+    <label for="response">Reponse</label>
+    <div>
+        <textarea id="response" type="text"></textarea>
+    </div>
+    <button id="sendBtn" disabled>Send</button>
+    <script type="module" src="./external-reader.js"></script>
+</body>
+
+</html>
