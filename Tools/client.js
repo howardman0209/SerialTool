@@ -4,10 +4,10 @@ import SerialPort from "./serialPort.js";
 
 document.body.innerHTML += `<pre id="output"></pre>`;
 const output = document.getElementById('output');
-const sendBtn = document.getElementById(`sendBtn`) 
+const sendBtn = document.getElementById(`sendBtn`)
 sendBtn.onclick = () => {
     let data = document.getElementById('input').value
-    if (data.length > 0 && data.length % 2 == 0) {
+    if (data.length > 0 && data.length % 2 == 0 && /^([0-9a-fA-F]+)$/.test(data)) {
         serialPort.sendData(data.hexToByteArray());
         output.textContent += `${getCurrentTime()} TX => ${data}\n`;
         document.getElementById('input').value = ""
